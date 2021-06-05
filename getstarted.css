@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primaryColor: white;
+  --secondaryColor: #523428;
+}
+body {
+  min-height: 100%;
+  background-size: cover;
+  background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 0, 0, 0.1881127450980392) 30%,
+      rgba(166, 77, 0, 0.9220063025210083) 100%
+    ),
+    url(./images/background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  user-select: none;
+  text-align: center;
+  margin-top: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+  font-size: 3rem;
+  color: var(--primaryColor);
+}
+div {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+  align-items: stretch;
+  padding: 5rem;
+  border-radius: 1rem;
+}
+div a {
+  user-select: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--primaryColor);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondaryColor);
+  transition: 0.8s;
+  margin: 1rem;
+}
+a:hover {
+  background-color: #6d4636;
+  -webkit-box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.86);
+  -moz-box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.86);
+  box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.86);
+  border-radius: 2rem;
+}
+.aboutus {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+.partners {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+.offers {
+  padding: 1.5rem;
+}
+.locations {
+  padding: 1.5rem;
+}
+.contact {
+  padding: 1.5rem;
+}
+h1 span {
+  text-decoration: underline;
+}
+.div1 {
+  margin-top: 2rem;
+}
+.div3 {
+  margin-top: -5rem;
+}
+.div2 {
+  margin-top: -2rem;
+}
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .aboutus {
+    padding: 1rem;
+  }
+  .partners {
+    padding: 1rem;
+  }
+  .offers {
+    padding: 1rem;
+  }
+  .locations {
+    padding: 1rem;
+  }
+  .contact {
+    padding: 1rem;
+  }
+  div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    align-items: stretch;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  div span {
+    display: block;
+    margin-top: 2.5rem;
+  }
+  div a {
+    font-size: 2rem;
+  }
+  .div2 {
+    margin-top: -2rem;
+  }
+  .div1 {
+    margin-top: -2rem;
+  }
+  .div3 {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+  }
+}
